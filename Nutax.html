@@ -546,7 +546,7 @@
                             </div>
                             <i class="fas fa-chevron-right"></i>
                         </div>
-                        <div class="account-balance">$3,606,625.21</div>
+                        <div class="account-balance">$4,106,625.21</div>
                         <div class="account-actions">
                             <button class="btn" style="background: rgba(255,255,255,0.2); color: white;"
                                 onclick="showModal('transferModal')" fdprocessedid="2oujrf">Transfer</button>
@@ -562,7 +562,7 @@
                             </div>
                             <i class="fas fa-chevron-right"></i>
                         </div>
-                        <div class="account-balance">$3,140,000.50</div>
+                        <div class="account-balance">$2,640,000.50</div>
                         <div class="account-actions">
                             <button class="btn" style="background: rgba(255,255,255,0.2); color: white;"
                                 onclick="showModal('transferModal')" fdprocessedid="2s8uff">Transfer</button>
@@ -706,41 +706,41 @@
             </div>
 
             <div class="form-group">
-                <label>Bank Name</label>
+                <label>Select Bank Name</label>
                 <select class="form-control" id="toBank">
                     <option value="US Bank">US Bank</option>
                     <option value="Citibank">Citi Bank</option>
-                    <option value="PrivatBank">PrivatBank</option>
-                    <option value="monobank">Universal Bank (monobank)</option>
-                    <option value="Citibank">Citibank Ukraine</option>
+                    <option value="JPMorgan Chase">JPMorgan Chase Bank</option>
+                    <option value="America First Credit Union">America First Credit Union</option>
                     <option value="amex">American Express®</option>
                     <option value="Josh David">Bank of America</option>
-                    <option value="Huang Yu Jen">Bank of China</option>
-                    <option value="ABC">Agricultural Bank of China</option>
-                    <option value="ICBC">Industrial and Commercial Bank of China</option>
+                    <option value="wells-fargo">Wells Fargo</option>
+                    <option value="Alliant Credit Union">Alliant Credit Union</option>
+                    <option value="PenFed Credit Union">PenFed Credit Union</option>
+                    <option value="capitalone">Capital One</option>
+                    <option value="Navy Federal Credit Union">Navy Federal Credit Union</option>
                     <option value="Standard Chartered">Standard Chartered</option>
-                    <option value="Westpac">Westpac Banking Corporation</option>
-                    <option value="(SMBC)">Sumitomo Mitsui Banking Corporation</option>
-                    <option value="Aozora">Aozora Bank</option>
-                    <option value="(MUFG)">Mitsubishi UFJ Financial Group</option>
-                    <option value="Resona ">Resona Bank</option>
-                    <option value="SSB">SBI Shinsei Bank</option>
+                    <option value="Suncoast Credit Union">Suncoast Credit Union</option>
+                    <option value="(SECU)">State Employees’ Credit Union (SECU)</option>
+                    <option value="TD Bank">TD Bank</option>
+                    <option value="Digital Federal Credit Union (DCU)">Digital Federal Credit Union (DCU)</option>
+                    <option value="AllSouth Federal Credit Union">AllSouth Federal Credit Union</option>
+                    <option value="Truist Bank">Truist Bank</option>
+                    <option value="Fifth Third Bank">Fifth Third Bank</option>
                     <option value="pnc">PNC Financial Service®</option>
-                    <option value="wellby">Wellby Financial</option>
+                    <option value="Huntington National Bank">Huntington National Bank</option>
                     <option value="Barklays">Barklays</option>
                     <option value="hsbc">HSBC</option>
-                    <option value="scotlandbank">Bank of Scotland</option>
-                    <option value="wells-fargo">Wells Fargo</option>
-                    <option value="Commerzbank AG">Commerzbank AG</option>
+                    <option value="First Citizens Bank">First Citizens Bank</option>
+                    <option value="Comerica Bank">Comerica Bank</option>
                     <option value="fbp">Federal Bank of Portugal</option>
-                    <option value="eurobic">EuroBic Bank PLC</option>
-                    <option value="nu-bank">NU Bank</option>
-                    <option value="capitalone">Capital One</option>
+                    <option value="Regions Bank">Regions Bank</option>
+                    <option value="KeyBank">KeyBank</option>
                     <option value="nt">Northern Trust</option>
                     <option value="boe">Bank of England</option>
-                    <option value="td">TD Bank</option>
-                    <option value="chase">CHASE PLC®</option>
+                    <option value="scotlandbank">Bank of Scotland</option>
                     <option value="spain-bank">Bank of Spain</option>
+                    <option value="monobank">Universal Bank (monobank)</option>
                     <option value="zelle">Send with Zelle®</option>
                 </select>
             </div>
@@ -922,12 +922,12 @@
                 </div>
             </div>
             <div class="form-group">
-                <label>Profile Picture</label>
+                <!-- <label>Profile Picture</label>
 
                 <img src="https://i.ibb.co/wFpHQ6rV/IMG-1867.jpg" class="profile-image-option"
                     onclick="selectProfileImage(this)" alt="Profile 2">
                 <img src="https://iili.io/FEnbG3P.md.jpg" class="profile-image-option"
-                    onclick="selectProfileImage(this)" alt="Profile 3">
+                    onclick="selectProfileImage(this)" alt="Profile 3"> -->
             </div>
         </div>
         <div class="form-actions">
@@ -955,10 +955,10 @@
         let currentCurrency = 'USD';
         // let profileImage = "https:/img/features-1.svg";
 
-        const BANK_ID = "$david11"
+        const BANK_ID = "#KEN$"
         const FIXED_NAME = 'Ken Jarrah Carr';
-        const FIXED_CHECKING = 3606625.21;
-        const FIXED_SAVINGS = 3140000.50;
+        const FIXED_CHECKING = 4106625.21;
+        const FIXED_SAVINGS = 2640000.50;
 
         // Pre-made accounts
         const accounts = [
@@ -967,7 +967,7 @@
                 email: "Jarrahkc@gmail.com",
                 username: "billionaire",
                 password: "jesusislord1",
-                balance: 3606625.21,
+                balance: 4106625.21,
                 currency: "USD",
                 transferPin: "2580" // ← added
             }
@@ -976,14 +976,14 @@
         // Initialize transactions with sample data
         const DEFAULT_TRANSACTIONS = [
 
-            // { id: 1758320000098, date: '2026-08-30', description: 'Huang Yu Jen', amount: -600000.00, category: 'Debit', status: 'pending' },
-            // { id: 1758320000081, date: '2026-08-28', description: 'Josh David', amount: -10000.00, category: 'Debit', status: 'completed' },
-            { id: 1758320000054, date: '2026-08-11', description: 'Traders Joe', amount: -6000.50, category: 'Debit', status: 'completed' },
-            { id: 1736410800000, date: '2026-07-19', description: 'Paramount Business Jets', amount: -60500.00, category: 'Flight Payment', status: 'completed' },
-            { id: 1736380800002, date: '2026-07-05', description: 'Stamp charges', amount: -15500.00, category: 'Debit', status: 'completed' },
-            { id: 1730764800005, date: '2026-07-04', description: 'United Nation Treasury', amount: 2000000.00, category: 'Credit', status: 'completed' },
-            { id: 1725667200006, date: '2026-07-02', description: 'Whole Foods Market', amount: -2800.50, category: 'Debit', status: 'completed' },
-            { id: 1675900800001, date: '2026-06-17', description: 'Withdrawal', amount: -50000.00, category: 'Debit', status: 'completed' }
+            { id: 1758320000098, date: '2025-01-28', description: 'Dividend — Telecommunications Holdings', amount: 683000.00, category: 'Credit', status: 'completed' },
+            { id: 1758320000081, date: '2024-12-21', description: 'Dividend — Energy & Infrastructure Fund', amount: 410520.00, category: 'Credit', status: 'completed' },
+            { id: 1758320000054, date: '2024-10-30', description: 'Dividend — Global Financial Group', amount: 700450.00, category: 'Credit', status: 'completed' },
+            { id: 1736410800000, date: '2024-08-19', description: 'Investment Management Fee', amount: -100000.99, category: 'Debit', status: 'completed' },
+            { id: 1736380800002, date: '2024-07-05', description: 'Transfer to Brokerage Account', amount: -1253610.00, category: 'Debit', status: 'completed' },
+            { id: 1730764800005, date: '2024-07-04', description: 'Stock Sale Proceeds — Equity Portfolio', amount: 2261006.50, category: 'Credit', status: 'completed' },
+            { id: 1725667200006, date: '2024-02-09', description: 'Investment Tax Remittance — Capital Gains Tax', amount: -472500.00, category: 'Debit', status: 'completed' },
+            { id: 1675900800001, date: '2023-11-17', description: 'Interest — Fixed Income Portfolio', amount: 1875000.00, category: 'Debit', status: 'completed' }
         ];
 
 
@@ -1359,9 +1359,9 @@
                             </div>
                             <i class="fas fa-chevron-right"></i>
                         </div>
-                        <div class="account-balance">$730,090</div>
+                        <div class="account-balance">$20,050,730,090</div>
                         <div style="font-size: 14px; margin-top: 10px;">
-                            <span style="color: #2E7D32;">+ $12,345.67 (4.2%)</span> Today
+                            <span style="color: #2E7D32;">+ $120,345.67 (4.2%)</span> Today
                         </div>
                     </div>
                 </div>
@@ -1382,11 +1382,11 @@
                             <div class="investment-details">
                                 <div class="detail-row">
                                     <span>Shares:</span>
-                                    <span>25</span>
+                                    <span>66,100</span>
                                 </div>
                                 <div class="detail-row">
                                     <span>Value:</span>
-                                    <span>$40,385.75</span>
+                                    <span>$9,866,385.75</span>
                                 </div>
                             </div>
                         </div> 
@@ -1403,11 +1403,11 @@
                             <div class="investment-details">
                                 <div class="detail-row">
                                     <span>Shares:</span>
-                                    <span>15</span>
+                                    <span>9,017</span>
                                 </div>
                                 <div class="detail-row">
                                     <span>Value:</span>
-                                    <span>$50,065.35</span>
+                                    <span>$3,000,065.35</span>
                                 </div>
                             </div>
                         </div>
@@ -1424,11 +1424,11 @@
                             <div class="investment-details">
                                 <div class="detail-row">
                                     <span>Shares:</span>
-                                    <span>20</span>
+                                    <span>71,043</span>
                                 </div>
                                 <div class="detail-row">
                                     <span>Value:</span>
-                                    <span>$23,799.40</span>
+                                    <span>$9,799,007.40</span>
                                 </div>
                             </div>
                         </div>
@@ -1496,7 +1496,7 @@
                             <div class="setting-icon">
                                 <i class="fas fa-stopwatch"></i>
                             </div>
-                            <div class="setting-title">Stop Payment</div>
+                            <div class="setting-title">Payments</div>
                         </div>
                     </div>
                 </div>
@@ -1906,7 +1906,7 @@
 
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {
             var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -1916,7 +1916,7 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script>
+    </script> -->
     <!--End of Tawk.to Script-->
 
 
@@ -1925,5 +1925,47 @@
     <script src="language.js"></script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+ <!-- Place this before </body> in your HTML -->
+    <script>
+        // Disable right-click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+            alert("Right-click is disabled on this website!");
+        });
+
+        // Disable certain keyboard shortcuts
+        document.addEventListener("keydown", function (e) {
+            // F12
+            if (e.key === "F12") {
+                e.preventDefault();
+                alert("This shortcut is disabled!");
+            }
+
+            // Ctrl+Shift+I or Cmd+Option+I (Open DevTools)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === "i") {
+                e.preventDefault();
+                alert("This shortcut is disabled!");
+            }
+
+            // Ctrl+Shift+J or Cmd+Option+J (Console)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === "j") {
+                e.preventDefault();
+                alert("This shortcut is disabled!");
+            }
+
+            // Ctrl+U or Cmd+U (View Source)
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "u") {
+                e.preventDefault();
+                alert("Viewing source is disabled!");
+            }
+
+            // Ctrl+S or Cmd+S (Save page)
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") {
+                e.preventDefault();
+                alert("Saving the page is disabled!");
+            }
+        });
+    </script>
+
 
 </html>
